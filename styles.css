@@ -10,7 +10,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 10px;
-  /* transform-style: preserve-3d; */
+  transform-style: preserve-3d;
 }
 
 .heading-portion {
@@ -25,8 +25,7 @@
 
 .background {
   position: absolute;
-  transform: translateZ(-20px) scale(3);
-  background-image: url(assets/background.png);
+  transform: translateZ(-25px) scale(3.5);
   z-index: -5;
   height: 100%;
   width: 100%;
@@ -111,5 +110,47 @@ h1 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-device-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .first-info {
+    padding: 2rem 0;
+  }
+  .first-info h2 {
+    font-size: 2.2rem;
+    padding: 0 2rem;
+  }
+  .first-info p {
+    text-align: left;
+    font-size: 12px;
+    padding: 0 2rem;
+    margin: 2rem 0;
+  }
+
+  .first-sport {
+    background-image: url(assets/photo-1606087492572-424ebe0f2f61.avif);
+  }
+
+  .third-sport {
+    background-image: url(assets/GettyImages-1140005458.jpg);
+    background-position: right;
+  }
+
+  .sport {
+    min-height: 600px;
+  }
+  .sport-head {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .unique {
+    font-size: 2rem;
   }
 }
